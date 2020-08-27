@@ -42,3 +42,6 @@ resource "aws_alb_target_group_attachment" "alb_backend-02_http" {
   port             = 80
 }
 
+
+
+
