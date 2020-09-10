@@ -23,3 +23,4 @@ Run terraform init command
 Run terraform apply command. Provide yes as input when asked and hit enter
 Hurray!! Your infrastructure is now ready.
 ```
+local-repository
