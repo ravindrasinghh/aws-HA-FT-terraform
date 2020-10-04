@@ -84,6 +84,7 @@ jobs:
       run: terraform plan
 
     - name: Terraform Destroy 
+      if: github.ref == 'refs/heads/master' && github.event_name == 'push'
       run: terraform destroy -auto-approve 
 
     #   # On push to master, build or change infrastructure according to Terraform configuration files
