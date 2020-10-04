@@ -15,3 +15,5 @@ resource "aws_instance" "db" {
 data "template_file" "user_data2" {
   template = "${file("template/user_data.tpl")}"
 }
+
+
