@@ -2,8 +2,11 @@ variable "aws_region" {
   default = "us-east-1"
 }
 
-variable "aws_profile" {
-  default = "default"
+variable "access_key" {
+  type = string
+}
+variable "secret_key" {
+  type = string
 }
 variable "instance_count" {
   default = "2"
