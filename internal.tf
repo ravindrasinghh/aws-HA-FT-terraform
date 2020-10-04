@@ -41,7 +41,3 @@ resource "aws_alb_target_group_attachment" "alb_backend-02_http" {
   target_id        = "${aws_instance.db.id}"
   port             = 80
 }
-
-
-
-
