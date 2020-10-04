@@ -1,7 +1,7 @@
 resource "aws_instance" "db" {
   ami           = "ami-0b898040803850657"
   instance_type = "t2.micro"
-  key_name      = "ravi"
+  key_name      = "dns"
   subnet_id     = "${aws_subnet.private1.id}"
 
   #user_data     = "${file("installhttpd.sh")}"
