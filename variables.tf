@@ -5,7 +5,7 @@ variable "aws_region" {
 variable "aws_profile" {
   default = "default"
 }
-  variable "instance_count" {
+variable "instance_count" {
   default = "2"
 }
 variable "vpc_cidr" {
@@ -24,5 +24,5 @@ variable "private_subnet_cidr" {
 }
 variable "availability_zone" {
   type    = list(string)
-  default = ["us-east-1a","us-east-1e"]
+  default = ["us-east-1a", "us-east-1e"]
 }
