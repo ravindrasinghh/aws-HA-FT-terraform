@@ -36,7 +36,7 @@ jobs:
 
     # Generates an execution plan for Terraform
     - name: Terraform Plan
-      run: terraform destroy -action
+      run: terraform plan
 
     # - name: Terraform Destroy 
     #   run: terraform plan -destroy
