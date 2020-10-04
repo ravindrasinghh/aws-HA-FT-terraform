@@ -14,5 +14,13 @@ pipeline
         sh "terraform init -input=false"
       }
     }
+    tage('Terraform plan') {
+        when {
+                branch 'master'
+            }
+      steps {
+        sh "terraform plan"
+      }
+    }
   }
 }
